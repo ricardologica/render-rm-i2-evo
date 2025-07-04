@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  evolution:
+    image: devlucas/evolution-api:latest
+    container_name: evolution
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
